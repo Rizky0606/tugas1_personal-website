@@ -5,16 +5,14 @@ function handleSubmit() {
   let subject = document.getElementById("subject").value;
   let message = document.getElementById("input-message").value;
 
-  if (name == "") {
-    return alert("Nama harus diisi");
-  } else if (email === "") {
-    return alert("Email harus diisi");
-  } else if (phoneNumber === "") {
-    return alert("Nomor Telepon harus diisi");
-  } else if (subject === "") {
-    return alert("Subject harus dipilih");
-  } else if (message === "") {
-    return alert("Message harus diisi");
+  if (
+    name == "" ||
+    email === "" ||
+    phoneNumber === "" ||
+    subject === "" ||
+    message === ""
+  ) {
+    return alert("Form harus terisi semua");
   }
 
   let emailReceiver = "rizkyfauzi132@gmail.com";
